@@ -58,10 +58,15 @@ module.exports = {
           {
             text: '指南',
             link: '/zh/guide/'
+          },
+          {
+            text: '帮助',
+            link: '/zh/help/'
           }
         ],
         sidebar: {
-          '/zh/guide/': genSidebarConfig('guide', '指南')
+          '/zh/guide/': genSidebarConfig('guide', '指南'),
+          '/zh/help/': genSidebarConfig('help', '帮助')
         }
       }
     }
@@ -74,7 +79,16 @@ function genSidebarConfig(module, title) {
       {
         title,
         collapsable: false,
-        children: ['api']
+        children: ['', 'api']
+      }
+    ]
+  }
+  if (module === 'help') {
+    return [
+      {
+        title,
+        collapsable: false,
+        children: ['', 'register', 'wallet']
       }
     ]
   }
