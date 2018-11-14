@@ -337,3 +337,366 @@ UI示意图：钱包详情
         </th>
     </tr>
 </table>
+
+## 转账
+
+| 前置条件 | 进入转账界面               |
+| :------- | :------------------------- |
+| 触发事件 | 点击转账按钮进入           |
+| 成功场景 | 展示相应的页面             |
+| 错误场景 | 操作失败，系统给出失败原因 |
+| 功能说明 | 该功能为用户提供转账操作   |
+| 操作者   | 所有用户                   |
+
+UI示意图：转账界面
+
+![](./assets/wallet/wallet10.png)
+![](./assets/wallet/wallet11.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>转账金额</th>
+        <th style="text-align:left;">
+            用户可输入转账金额（转账金额大于零小于等于自身所持有的资产）
+        </th>
+    </tr>
+    <tr>
+        <th>转账备注</th>
+        <th style="text-align:left;">
+           用户填写转账的备注信息
+        </th>
+    </tr>
+     <tr>
+        <th>收款账号</th>
+        <th style="text-align:left;">
+            用户可通过扫描二维码识别收款地址、手动粘贴收款地址、手动输入收款地址三种方式输入收款帐号
+        </th>
+    </tr>
+    <tr>
+        <th>选择付款账号</th>
+        <th style="text-align:left;">
+           用户选择支付账户
+        </th>
+    </tr>
+     <tr>
+        <th>选择支付的手续费(ETH/BTC)</th>
+        <th>
+            <ul style="text-align:left;">
+                <li>用户界面左右滑动选择手续费，根据手续费的高低决定转账速度快慢</li>
+                <li>EOS/MIS币不需要支付转账手续费</li>
+            </ul>
+        </th>
+    </tr>
+    <tr>
+        <th>确定转账(发送)</th>
+        <th style="text-align:left;">
+            输入钱包密码，确认转账
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>
+             <ul style="text-align:left;">
+                <li>界面显示用户所属钱包余额（所持有数量）</li>
+                <li>所持钱包总额度=转账金额+转账手续费+钱包余额（ETH/BTC）</li>
+            </ul>
+        </th>
+    </tr>
+</table>
+
+## 收款
+
+| 前置条件 | 用户成功创建或导入钱包             |
+| :------- | :--------------------------------- |
+| 触发事件 | 点击收款进入                       |
+| 成功场景 | 展示相应的页面                     |
+| 错误场景 | 操作失败，系统给出失败原因         |
+| 功能说明 | 用户可通过提供钱包地址进行收款操作 |
+| 操作者   | 所有用户                           |
+
+UI示意图：收款界面
+
+![](./assets/wallet/wallet12.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>复制地址</th>
+        <th style="text-align:left;">
+            复制钱包地址 （EOS收款地址为注册账户名）
+        </th>
+    </tr>
+    <tr>
+        <th>更换钱包</th>
+        <th style="text-align:left;">
+           当用户具有多个相同类型的钱包，用户可对收款钱包进行更换操作 
+        </th>
+    </tr>
+     <tr>
+        <th>分享</th>
+        <th style="text-align:left;">
+            用户可对收款二维码转发分享操作，有效提供收款信息
+        </th>
+    </tr>
+</table>
+
+## 钱包管理/钱包详情
+
+| 前置条件 | 用户拥有钱包                     |
+| :------- | :------------------------------- |
+| 触发事件 | 点击钱包管理                     |
+| 成功场景 | 展示相应的页面                   |
+| 错误场景 | 操作失败，系统给出失败原因       |
+| 功能说明 | 钱包管理列表以及对钱包操作的展示 |
+| 操作者   | 所有用户                         |
+
+UI示意图：收款界面
+
+![](./assets/wallet/wallet13.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>钱包列表</th>
+        <th style="text-align:left;">
+            选择不同类型钱包查看相应钱包的类型
+        </th>
+    </tr>
+    <tr>
+        <th>导入钱包</th>
+        <th style="text-align:left;">
+           点击钱包管理右上角“+”进入导入钱包页面，详情操作可见【导入钱包】
+        </th>
+    </tr>
+     <tr>
+        <th>导出钱包</th>
+        <th style="text-align:left;">
+            选择任意一钱包，进行导出钱包页面，详情操作可见【导出钱包】
+        </th>
+    </tr>
+    <tr>
+        <th>复制钱包地址</th>
+        <th style="text-align:left;">
+           选择任意一钱包，点击钱包地址完成复制操作
+        </th>
+    </tr>
+     <tr>
+        <th>删除钱包</th>
+        <th style="text-align:left;">
+            钱包管理中系统默认创建的4种类型钱包不可进行删除操作，通过用户手动导入的钱包可进行删除
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th >
+            <ul style="text-align:left;">
+                <li>用户手动导入的多个相同类型的钱包时，钱包名称可按导入的先后时间增加进行区分</li>
+                <li>EOS_wallet钱包处于未注册状态是该钱包不能进行转账收款操作，并且没有钱包地址</li>
+                <li>钱包分类显示：当前身份下的钱包/导入的钱包</li>
+            </ul>
+        </th>
+    </tr>
+</table>
+
+UI示意图：注册EOS账户
+
+![](./assets/wallet/wallet14.png)
+![](./assets/wallet/wallet15.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>账户名</th>
+        <th style="text-align:left;">
+            用户编辑EOS账户名（账户名按字符规定编辑）
+        </th>
+    </tr>
+    <tr>
+        <th>分享二维码</th>
+        <th style="text-align:left;">
+           编辑不同的账户名存入二维码的信息随之变动，用户可将二维码进行分享操作
+        </th>
+    </tr>
+     <tr>
+        <th>购买注册</th>
+        <th style="text-align:left;">
+            EOS注册需通过已有EOS钱包账户的用户进行购买，完成后该用户的账户注册成功，钱包管理中的EOS钱包可进行导出操作。
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th >
+            <ul style="text-align:left;">
+                <li>EOS_wallet钱包的地址为注册EOS账户时输入的账户名</li>
+                <li>若购买支付方有多个EOS账户，可选择任意一EOS账户支付</li>
+            </ul>
+        </th>
+    </tr>
+</table>
+
+## 导入钱包
+
+| 前置条件 | 用户拥有其他APP下创建的钱包            |
+| :------- | :------------------------------------- |
+| 触发事件 | 点击导入钱包                           |
+| 成功场景 | 展示相应的页面                         |
+| 错误场景 | 操作失败，系统给出失败原因             |
+| 功能说明 | 实现用户将其他的所属的钱包进行导入操作 |
+| 操作者   | 所有用户                               |
+
+UI示意图：导入钱包（BTC/ETH/EOS）界面
+
+![](./assets/wallet/wallet16.png)
+![](./assets/wallet/wallet17.png)
+![](./assets/wallet/wallet18.png)
+![](./assets/wallet/wallet19.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>选择导入钱包类型</th>
+        <th style="text-align:left;">
+            用户选择需导入的钱包类型（以太坊、比特币、EOS、MIS、DAPP），进入对应的导入方式页面
+        </th>
+    </tr>
+    <tr>
+        <th>BITCOIN钱包</th>
+        <th>
+            <ul style="text-align:left;">
+                <li>该钱包的导出方式：助记词、私钥</li>
+                <li>选择助记词导入方式，用户将已备份的助记词输入，并用空格分隔</li>
+                <li>选择私钥导入方式，用户通过手动输入或扫描识别录入方式填写明文私钥，注意输入字符的大小写问题</li>
+                <li>用户可重新设置钱包密码，同时需二次确认输入。钱包密码为该钱包的支付密码</li>
+                <li>用户输入密码提示信息，以便用户操作时忘记钱包密码进行提示</li>
+                <li>点击“了解明文私钥”/“了解助记词”，用户进入详细阅读相关概述</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>ETHEREUM钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导入方式：Keystore、助记词、私钥</li>
+                <li>选择助记词、私钥导入方式操作详情可见【BITCOIN钱包】</li>
+                <li>选择Keystore导入方式，用户需将Keystore文件内容通过复制粘贴或扫描存有Keystore内容的二维码录入文本框，并填写确认密码，点击“导入”即可（界面效果图如与实际显示不符，请以实际效果图为准）</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>EOS钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导入方式：助记词、私钥、ETH私钥</li>
+                <li>助记词、私钥的导入方式操作详情可见【BITCOIN钱包】</li>
+                <li>选择ETH私钥导入方式，用户须将以太坊私钥内容通过手动输入或扫描存有私钥内容生成的二维码录入文本框，并填写确认密码，点击"导入"即可，使用ETH私钥找回导入时用户所属的ETH账户须满足操作条件，具体条件用户可查看"EOS账户找回说明"</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>MIS钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导入方式：助记词、私钥、ETH私钥</li>
+                <li>具体导入操作详情可见【EOS钱包】</li>
+            </ul>
+        </th>
+    </tr>
+</table>
+
+## 导出钱包
+
+| 前置条件 | 用户创建或导入过钱包                                         |
+| :------- | :----------------------------------------------------------- |
+| 触发事件 | 点击钱包导出进入                                             |
+| 成功场景 | 展示相应的页面                                               |
+| 错误场景 | 操作失败，系统给出失败原因                                   |
+| 功能说明 | 用户可将已创建的的钱包导出（根据钱包类型使用不同的方式导出） |
+| 操作者   | 所有用户                                                     |
+
+UI示意图：导出界面
+
+![](./assets/wallet/wallet20.png)
+![](./assets/wallet/wallet21.png)
+![](./assets/wallet/wallet22.png)
+
+> 界面元素------输入及按钮
+
+<table>
+    <tr>
+        <th>名称</th>
+        <th>规则</th>
+    </tr>
+    <tr>
+        <th>导出钱包</th>
+        <th style="text-align:left;">
+            不同类型的钱包具有不同的导出方式
+        </th>
+    </tr>
+    <tr>
+        <th>BTC_wallet钱包</th>
+        <th>
+            <ul style="text-align:left;">
+                <li>该钱包的导出方式：助记词，私钥</li>
+                <li>密码提示信息以便用户操作时忘记钱包密码进行提示</li>
+                <li>选择导出助记词方式（助记词、私钥方式导入），输入密码可查看助记词，并将其正确抄写保存</li>
+                <li>选择导出私钥方式（私钥方式导入），输入密码可查看私钥，并进行复制保存操作</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>ETH_wallet钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导出方式：助记词，Keystore，私钥</li>
+                <li>用户选择导出方式后需输入密码，用户操作时可进行查看密码提示信息</li>
+                <li>选择助记词、私钥导出方式，操作详情可见【BTC_wallet钱包】</li>
+                <li>选择Keystore导出方式，用户进入Keystore导出页面，可查看并复制Keystore或将Keystore信息生成二维码保存</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>EOS钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导入方式：助记词、私钥、ETH私钥</li>
+                <li>选择助记词、私钥导出方式，操作详情可见【BTC_wallet钱包】</li>
+                <li>导出EOS私钥可将私钥信息生成二维码进行保存</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>MIS钱包</th>
+        <th >
+            <ul style="text-align:left;">
+                <li>该钱包的导入方式：私钥、助记词</li>
+                <li>选择助记词、私钥导出方式，操作详情可见【BTC_wallet钱包】</li>
+            </ul>
+        </th>
+    </tr>
+</table>

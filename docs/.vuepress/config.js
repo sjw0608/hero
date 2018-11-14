@@ -88,7 +88,7 @@ function genSidebarConfig(module, title) {
       {
         title,
         collapsable: false,
-        children: ['', 'register', 'wallet']
+        children: ['', 'register', 'wallet', 'market', 'home']
       }
     ]
   }
