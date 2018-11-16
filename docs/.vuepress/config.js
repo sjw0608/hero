@@ -2,7 +2,7 @@ module.exports = {
   base: '/dev/',
   locales: {
     '/': {
-      lang: 'en-US', // 这个值会被设置在 <html> 的 lang 属性上
+      lang: 'en-US',
       title: 'Mission Docs',
       description: 'The Technical Docs of Mission'
     },
@@ -37,10 +37,15 @@ module.exports = {
           {
             text: 'Guide',
             link: '/guide/'
+          },
+          {
+            text: 'Help',
+            link: '/help/'
           }
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('guide', 'Guide')
+          '/guide/': genSidebarConfig('guide', 'Guide'),
+          '/help/': genSidebarConfig('help', 'Help')
         }
       },
       '/zh/': {
