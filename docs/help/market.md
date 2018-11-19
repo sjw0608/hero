@@ -1,16 +1,16 @@
-# 行情
+# Market Information
 
-## 自选
+## Optional
 
-| precondition              | 所有                                                                 |
-| :------------------------ | :------------------------------------------------------------------- |
-| Triggering event          | 点击加入自选按钮                                                     |
-| The success scenario      | 自选界面拥有该交易对                                                 |
-| Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 用户可将个人关注的各种交易对添加至自选列表                           |
-| The operator              | All users                                                            |
+| precondition              | All                                                                                    |
+| :------------------------ | :------------------------------------------------------------------------------------- |
+| Triggering event          | Click the add self-selection button                                                    |
+| The success scenario      | The self-select interface owns the transaction pair                                    |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure                   |
+| Functional specifications | Users can add various transaction pairs of personal concern to the self-selection list |
+| The operator              | All users                                                                              |
 
-UI示意图：自选界面
+UI schematic: Self - selected interface
 
 ![](./assets/market/market1.png)
 
@@ -18,52 +18,52 @@ UI示意图：自选界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>自选</th>
+        <th>Optional</th>
         <th>
              <ul style="text-align:left;">
-                <li>页面展示用户所添加的所有交易对信息列表</li>
-                <li>自选交易对可按照市场的最新价高低、涨跌幅度进行排序，交易对的市场价值与涨跌幅为实时更新，用户可查看最新数据</li>
-                <li>用户查看交易对最新价值，点击最新价按钮，自选交易对按价值由高到低排序；再次点击最新价按钮，自选交易对按价值由低至高排序，三次点击则按用户自选编辑中的拖动排序（用户查交易对看涨跌幅操作一致，点击涨跌幅按钮即可）</li>
-                <li>点击任意自选交易对，可查看该交易对走势详情</li>
-                <li>点击涨跌幅数值可对涨跌幅、总市值、成交量值随意切换查看</li>
+                <li>The page displays a list of all transaction pairs added by the user</li>
+                <li>The self-selected transaction can be sorted according to the latest price level of the market and the range of rise and fall. The market value and rise and fall of the trading pair are updated in real time, and users can check the latest data</li>
+                <li>The user can view the latest value of the transaction, click the latest price button, and choose the transaction value from high to low. Click the latest price button again, and the self-selected transaction pair will be sorted by value from low to high. The three clicks will be sorted by dragging in the user-selected editing. (the user can see the increase or decrease of the trading pair and click the increase or decrease button.)</li>
+                <li>Click the optional trading pair to view the details of the trading pair</li>
+                <li>Click the value of increase or decrease, the total market value, transaction value can be arbitrarily switched to view</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>编辑自选</th>
+        <th>Editors are optional</th>
         <th style="text-align:left;">
-             用户可将已添加的交易对进行删除（全选/单选）、拖动排序、置顶操作，点击“完成”保存即可
+             Users can delete the added transaction pair (select all or single), drag and sort, and put the top operation. Click "finish" to save
         </th>
     </tr>
     <tr>
-        <th>添加自选</th>
+        <th>Add the optional</th>
         <th style="text-align:left;">
-           用户点击添加自选按钮，输入币种名称/交易对，选择添加所需要的币种或交易对
+           The user clicks the add self-select button to enter the currency name/transaction pair and select the currency or transaction pair needed to be added
         </th>
     </tr>
      <tr>
-        <th>搜索</th>
+        <th>Search</th>
         <th style="text-align:left;">
-            点击所搜按钮，跳转搜索页面，操作详情可见【搜索】
+            Click the button searched and go to the search page. The operation details can be seen in [search].
         </th>
     </tr>
 </table>
 
-## 市值
+##  Market Value
 
-| precondition              | 无                                                                   |
-| :------------------------ | :------------------------------------------------------------------- |
-| Triggering event          | 点击市值tab选项卡                                                    |
-| The success scenario      | Display corresponding pages                                          |
-| Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 主要展示不同币种按照市值排序                                         |
-| The operator              | All users                                                            |
+| precondition              | Without                                                                     |
+| :------------------------ | :-------------------------------------------------------------------------- |
+| Triggering event          | Click the TAB TAB for market cap                                            |
+| The success scenario      | Display corresponding pages                                                 |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure        |
+| Functional specifications | It mainly shows the order of different currencies according to market value |
+| The operator              | All users                                                                   |
 
-UI示意图：市值排序界面
+UI schematic: Market ranking interface
 
 ![](./assets/market/market2.png)
 
@@ -71,34 +71,34 @@ UI示意图：市值排序界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>查看市值</th>
+        <th>Check the value of</th>
         <th style="text-align:left;">
-            用户可查看不同币种的市场价值与今日涨跌幅，页面展示所有的币种排序，根据价值由高到低排列
+            Users can view the market value of different currencies and the decline of today
         </th>
     </tr>
     <tr>
-        <th>搜索</th>
+        <th>Search</th>
         <th style="text-align:left;">
-           用户点击搜索按钮，查询相关币种的价值详情
+           The user clicks the search button to inquire the value details of the relevant currency
         </th>
     </tr>
 </table>
 
-## 交易对列表展示
+## Trade to list
 
-| precondition              | 无                                                                   |
+| precondition              | Without                                                              |
 | :------------------------ | :------------------------------------------------------------------- |
-| Triggering event          | 点击市值tab选项卡                                                    |
+| Triggering event          | Click the TAB TAB for market cap                                     |
 | The success scenario      | Display corresponding pages                                          |
 | Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 主要展示不同交易对的价值与涨跌幅                                     |
+| Functional specifications | Mainly shows the value of different trading pairs and declines       |
 | The operator              | All users                                                            |
 
-UI示意图：交易对列表界面
+UI schematic: Transaction to list interface
 
 ![](./assets/market/market3.png)
 
@@ -107,38 +107,38 @@ UI示意图：交易对列表界面
 <table>
     <tbody>
         <tr>
-            <th>名称</th>
-            <th>规则</th>
+            <th>Name</th>
+            <th>Rules</th>
         </tr>
         <tr>
-            <th rowspan="3">查看交易对</th>
-            <td>用户可选择以BTC/ETH/USDP为基础查看不同币种的最新价与涨跌幅，选择点击任意交易对可查看该交易对的走势详情</td>
+            <th rowspan="3">View transaction pairs</th>
+            <td>Users can choose to view the latest price and decline of different currencies on the basis of BTC/ETH/USDP, and choose to click any trading pair to see details of the trend of the trading pair</td>
         </tr>
         <tr>
-            <td>用户点击涨跌值，可切换查看涨跌幅、市值、成交额</td>
+            <td>Users click the rise and fall value, can switch to see the rise and fall, market value, transaction amount</td>
         </tr>
          <tr>
-            <td>交易对的默认排序为涨跌幅由高到低排列</td>
+            <td>The default order for trading pairs ranges from high to low</td>
         </tr>
          <tr>
-            <th>搜索</th>
-            <td>用户点击搜索图标，搜索查看具体的某一交易对的信息</td>
+            <th>Search</th>
+            <td>Users click on the search icon to search for information about a specific transaction</td>
         </tr>
     </tbody>
 </table>
 
-## 搜索
+## Search
 
-| 概述                      | 可以搜索交易对                                                       |
+| Overview                  | You can search for trading pairs                                     |
 | :------------------------ | :------------------------------------------------------------------- |
-| precondition              | 无                                                                   |
-| Triggering event          | 点击搜索进入                                                         |
+| precondition              | Without                                                              |
+| Triggering event          | Click search to enter                                                |
 | The success scenario      | Display corresponding pages                                          |
 | Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 提供用户搜索查看交易对与币种信息                                     |
+| Functional specifications | Provide user search to view transaction and currency information     |
 | The operator              | All users                                                            |
 
-UI示意图：搜索界面
+UI schematic: Search interface
 
 ![](./assets/market/market4.png)
 
@@ -146,52 +146,52 @@ UI示意图：搜索界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>输入</th>
+        <th>Input</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户需输入交易对/币种进行搜索</li>
-                <li>用户查询输入错误时，页面信息提示“搜索结果为空”</li>
+                <li>Users need to enter a transaction to search for/currency</li>
+                <li>When the user enters an error, the page message says "search result is empty".</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>移出/添加自选</th>
+        <th>Remove/add self selection</th>
         <th style="text-align:left;">
-            用户选择搜索的交易对或币种进行移出/添加操作，“-”表示自选列表已添加该交易对/币种，再次点击为移出操作，则自选列表不显示已取消的交易对/币种，“+”表示添加交易对/币种
+            The user selects the transaction to be searched or the currency to be removed/added. "-" indicates that the transaction pair/currency has been added to the self-selected list, and another click is the move out operation, then the self-selected list does not show the canceled transaction pair/currency, and "+" indicates that the transaction pair/currency has been added to the self-selected list
         </th>
     </tr>
     <tr>
-        <th>查看详情</th>
+        <th>Check the details</th>
         <th style="text-align:left;">
-           选择任意搜索的交易对/币种，可查看走势详情
+           Select any trading pair/currency you want to search for and see the action details
         </th>
     </tr>
     <tr>
-        <th>历史记录</th>
+        <th>The historical record</th>
         <th>
              <ul style="text-align:left;">
-                <li>展示用户输入搜索交易对/币种的历史记录，同时用户可对历史搜索记录进行清空操作</li>
-                <li>历史记录列表展示最新的20条记录</li>
+                <li>Displays the history record of search transaction/currency entered by the user, and the user can clear the history search record</li>
+                <li>The history list shows the latest 20 records</li>
             </ul>
         </th>
     </tr>
 </table>
 
-## 综合分析
+## Comprehensive analysis of
 
-| precondition              | 无                                                                   |
-| :------------------------ | :------------------------------------------------------------------- |
-| Triggering event          | 点击综合tab进入                                                      |
-| The success scenario      | Display corresponding pages                                          |
-| Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 对数据进行不同维度的分析展示，方便用户查看                           |
-| The operator              | All users                                                            |
+| precondition              | Without                                                                           |
+| :------------------------ | :-------------------------------------------------------------------------------- |
+| Triggering event          | Click TAB to enter                                                                |
+| The success scenario      | Display corresponding pages                                                       |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure              |
+| Functional specifications | Analyze and display the data in different dimensions for the convenience of users |
+| The operator              | All users                                                                         |
 
-UI示意图：综合界面
+UI diagram: Comprehensive interface
 
 ![](./assets/market/market5.png)
 ![](./assets/market/market6.png)
@@ -200,95 +200,95 @@ UI示意图：综合界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>交易对分析</th>
+        <th>Transaction analysis</th>
         <th style="text-align:left;">
-            显示已币种USDT为基础的BTC/ETH/EOS交易对的价值与涨跌幅，用户可选择点击任一交易对查看详情。具体信息可查看【交易对详情】
+            Displays the value of the usdt-based BTC/ETH/EOS trading pairs and the ups and downs, and users can choose to click on any trading pair to see details. For details, please check [transaction details].
         </th>
     </tr>
     <tr>
-        <th>搜索</th>
+        <th>Search</th>
         <th style="text-align:left;">
-            点击搜索图标，搜索查看某一交易对、币种信息
+            Click the search icon to search for information about a transaction and currency
         </th>
     </tr>
     <tr>
-        <th>MISTOKEN区块浏览器</th>
+        <th>MISTOKEN blockchain explorer</th>
         <th style="text-align:left;">
-            点击区块浏览器，进入浏览器页面，可查看所有的交易记录，具体页面展示可查看【区块链浏览器】
+            Click on the block browser and enter the browser page to view all transaction records. The specific page can be viewed [blockchain browser].
         </th>
     </tr>
     <tr>
-        <th>涨跌分布</th>
+        <th>Or distribution</th>
         <th style="text-align:left;">
-            用户可查看世界前500币种的涨跌分布图，统计显示上涨/下跌数量
+            Users can view a chart of the world's top 500 currencies, with statistics showing up/down Numbers
         </th>
     </tr>
     <tr>
-        <th>热门板块</th>
+        <th>Hot plate</th>
         <th>
              <ul style="text-align:left;">
-                <li>页面主要展示了三款热门板块信息</li>
-                <li>用户需查看更多板块，可点击“热门板块”中的更多按钮，进入板块的列表展示，展示所有的板块信息</li>
+                <li>The page mainly shows information of three popular sections</li>
+                <li>Users need to see more plates, and can click more buttons in "hot plates" to enter the list of plates and display all the plate information</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>涨幅榜</th>
+        <th>Performer</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户点击下拉显示图标，系统显示涨幅前4的币种信息</li>
-                <li>用户需查看更多的币种的涨幅可点击“更多”进入涨幅榜界面，查看所有的币种详情（价格/涨幅/成交量）</li>
-                <li>用户可根据价格/涨幅/成交量高低进行切换排序</li>
-            </ul>
-        </th>
-    </tr>
-     <tr>
-        <th>跌幅榜</th>
-        <th>
-             <ul style="text-align:left;">
-                <li>用户点击下拉显示图标，系统显示跌幅前4的币种信息</li>
-                <li>用户需查看更多的币种的跌幅可点击“更多”进入跌幅榜界面，查看所有的币种详情（价格/跌幅/成交量）</li>
-                <li>用户可根据价格/涨幅/成交量高低进行切换排序</li>
+                <li>The user clicks the drop-down display icon, and the system displays the currency information of the top 4</li>
+                <li>Users can click "more" to enter the "more" page to view all currency details (price/increase/volume).</li>
+                <li>Users can switch to sort according to price/increase/volume</li>
             </ul>
         </th>
     </tr>
      <tr>
-        <th>资金流入榜</th>
+        <th>Drop list</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户点击下拉显示图标，系统显示今日资金流入前4的币种信息</li>
-                <li>用户需查看更多的币种的资金流入，可点击“更多”进入今日流向界面，查看所有的交易对资金流入详情（净流入/占成交额比例）</li>
-                <li>用户根据净流入高低/占成交额比例进行切换排序</li>
+                <li>The user clicks the drop-down display icon, and the system displays the currency information of the top 4</li>
+                <li>Users can click "more" to enter the "more" page to view all currency details (price/increase/volume).</li>
+                <li>Users can switch to sort according to price/increase/volume</li>
             </ul>
         </th>
     </tr>
      <tr>
-        <th>资金流出榜</th>
+        <th>Capital inflow charts</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户点击下拉显示图标，系统显示今日资金流出前4的币种信息</li>
-                <li>用户需查看更多的币种的资金流出，可点击“更多”进入今日流向界面查看所有的交易对资金流出详情（净流出/占成交额比例）</li>
-                <li>用户根据净流出高低/占成交额比例进行切换排序</li>
+                <li>The user clicks the drop-down icon, and the system displays the currency information of the first 4 funds</li>
+                <li>Users need to see more fund inflow in currencies. Click "more" to enter today's flow interface to view details of all transactions on capital inflow (net inflow/share of transaction amount).</li>
+                <li>Users are sorted according to the proportion of net inflow/transaction amount</li>
+            </ul>
+        </th>
+    </tr>
+     <tr>
+        <th>Money flows out</th>
+        <th>
+             <ul style="text-align:left;">
+                <li>The user clicks the drop-down icon, and the system displays the currency information of the first 4 funds</li>
+                <li>Users need to see more fund inflow in currencies. Click "more" to enter today's flow interface to view details of all transactions on capital inflow (net inflow/share of transaction amount).</li>
+                <li>Users are sorted according to the proportion of net inflow/transaction amount</li>
             </ul>
         </th>
     </tr>
 </table>
 
-## 交易对详情
+## Transaction details
 
-| precondition              | 无                                                                   |
+| precondition              | Without                                                              |
 | :------------------------ | :------------------------------------------------------------------- |
-| Triggering event          | 点击交易对进入                                                       |
+| Triggering event          | Click trade on enter                                                 |
 | The success scenario      | Display corresponding pages                                          |
 | Error scenarios           | The operation fails, and the system gives the reason for the failure |
-| Functional specifications | 查看交易对详情                                                       |
+| Functional specifications | Check transaction details                                            |
 | The operator              | All users                                                            |
 
-UI示意图：详情界面
+UI schematic: Detail interface
 
 ![](./assets/market/market7.png)
 
@@ -296,50 +296,50 @@ UI示意图：详情界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>K线图</th>
+        <th>K-line Diagrams</th>
         <th style="text-align:left;">
-             根据不同时间间隔对交易对详情进行K线图展示
+             The trading details are shown by K chart according to different time intervals
         </th>
     </tr>
     <tr>
-        <th>币种介绍</th>
+        <th>The currency is introduced</th>
         <th style="text-align:left;">
-           展示币种的概述
+           Present an overview of currency
         </th>
     </tr>
      <tr>
-        <th>数据分析</th>
+        <th>The data analysis</th>
         <th style="text-align:left;">
-            币种的资金流入流出、最高最低价分析展示
+            Currency capital inflow and outflow, maximum and minimum price analysis
         </th>
     </tr>
     <tr>
-        <th>买卖深度</th>
+        <th>Trade in depth</th>
         <th style="text-align:left;">
-           展示当前币种买卖的挂单信息
+           Display the billing information of current currency transaction
         </th>
     </tr>
      <tr>
-        <th>收藏交易对</th>
+        <th>Collection transaction pair</th>
         <th style="text-align:left;">
-            用户点击收藏添加按钮，可将该交易对添加至自选交易对列表
+            The user clicks the favorites add button to add the transaction pair to the self-selected list of transaction pairs
         </th>
     </tr>
     <tr>
-        <th>搜索</th>
+        <th>Search</th>
         <th style="text-align:left;">
-            点击搜索按钮，进入搜索页面，进行搜索操作
+            Click the search button to enter the search page and conduct the search operation
         </th>
     </tr>
     <tr>
         <th></th>
         <th>
              <ul style="text-align:left;">
-                <li>用户对交易对详情信息截图分享，系统自动附带Mission钱包应用二维码，方便用户了解更多的钱包应用详情</li>
+                <li>Users share the transaction and detailed information screenshots. Mission wallet application qr code is automatically attached to the system to facilitate users to learn more about the wallet application details</li>
             </ul>
         </th>
     </tr>

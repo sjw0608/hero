@@ -1,5 +1,5 @@
 
-# Login/Register
+# Login or Register
 
 | precondition              | User registration/login                                              |
 | :------------------------ | :------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ UI diagram: Login registration interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>

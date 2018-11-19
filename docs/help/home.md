@@ -1,16 +1,16 @@
-# 个人中心
+# Personal Center
 
-## 个人中心首页
+## Personal center homepage
 
-| precondition     | 用户登录成功               |
-| :--------------- | :------------------------- |
-| Triggering event | 登录注册                   |
-| The success scenario         | Display corresponding pages             |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure |
-| Functional specifications         | 用户个人信息的管理         |
-| The operator           | All users                  |
+| precondition              | User logged in successfully                                          |
+| :------------------------ | :------------------------------------------------------------------- |
+| Triggering event          | Log in to register                                                   |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | User personal information management                                 |
+| The operator              | All users                                                            |
 
-UI示意图：个人中心界面
+UI diagram: Personal center interface
 
 ![](./assets/home/home1.png)
 
@@ -18,28 +18,28 @@ UI示意图：个人中心界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>个人信息</th>
+        <th>Personal Information</th>
         <th style="text-align:left;">
-             展示用户的个人信息（个人数据、钱包管理、实名认证、节点设置、多语言、货币单位、帮助中心、账户设置 、关于我们）
+             Display users' personal information (personal data, wallet management, real name authentication, node setting, multi-language, monetary unit, help center, account setting, about us)
         </th>
     </tr>
 </table>
 
-## 我的数据
+## My data
 
-| precondition     | 用户登录及上传信息         |
-| :--------------- | :------------------------- |
-| Triggering event | 点击个人数据进入           |
-| The success scenario         | Display corresponding pages             |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure |
-| Functional specifications         | 通过完善信息获得相应的标签 |
-| The operator           | All users                  |
+| precondition              | User login and upload information                                    |
+| :------------------------ | :------------------------------------------------------------------- |
+| Triggering event          | Click personal data to enter                                         |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Obtain appropriate labels by completing the information              |
+| The operator              | All users                                                            |
 
-UI示意图：个人数据标签界面
+UI schematic: Personal data label interface
 
 ![](./assets/home/home2.png)
 ![](./assets/home/home3.png)
@@ -48,110 +48,110 @@ UI示意图：个人数据标签界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>备份数据私钥</th>
+        <th>Back up the data private key</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户备份个人的Data-Key，需先通过微信信息授权、人物画像上传（个人身份认证）</li>
-                <li>用户进入我的数据页面，点击备份，可查看用户个人的Data-Key，点击“用密钥保险箱一键备份”，输入钱包密码，进入密钥保险箱页面，点击“一键备份”即可，确保个人信息的隐密性。若用户未进行微信信息授权、人物画像上传操作，点击备份时跳转微信授权界面</li>
-                <li>新用户未进行数据私钥备份，系统给出“红点”提示，未进行数据上链请求操作红色图标提示</li>
+                <li>Users backup their Data-Key, and need to be authorized by WeChat information and upload the portrait (personal identity authentication).</li>
+                <li>The user enters my Data page, clicks backup, and can view the user's data-key. Click "back up with Key safe", input the wallet password, and enter the Key safe page. Click "back up with Key" to ensure the privacy of personal information. If the user does not perform WeChat information authorization and character portrait uploading, click backup to jump to WeChat authorization interface</li>
+                <li>The new user did not perform data private key backup, the system gave a "red dot" prompt, and did not perform data link request operation red icon prompt</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>数据上链请求</th>
+        <th>Data link requests</th>
         <th>
              <ul style="text-align:left;">
-                <li>用户完成微信信息、人物画像数据上传操作，个人身份标签系统自动完善</li>
-                <li>用户点击人物画像，进入上传认证信息界面，上传图片数据（手机设置为允许访问状态），点击提交</li>
-                <li>用户进行点击微信信息进行授权操作</li>
+                <li>The user completes the operation of WeChat information and character portrait data upload, and the personal identity label system is perfected automatically</li>
+                <li>Users click on the portrait to enter the upload authentication information interface, upload image data (mobile phone is set to allow access status), and click submit</li>
+                <li>The user clicks WeChat information for authorization operation</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>关于数据上链</th>
+        <th>About the data on the chain</th>
         <th style="text-align:left;">
-             用户可通过查看数据上链的问题解释，更有效的了解数据上链信息
+           Users can more effectively understand the information of the data link by viewing the problem interpretation of the data link  
         </th>
     </tr>
 </table>
 
-## 钱包管理
+## DailyCash
 
-| precondition     | 用户登录账户                     |
-| :--------------- | :------------------------------- |
-| Triggering event | 点击钱包管理按钮                 |
-| The success scenario         | Display corresponding pages                   |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure       |
-| Functional specifications         | 钱包管理列表以及对钱包操作的展示 |
-| The operator           | All users                        |
+| precondition              | User login account                                                   |
+| :------------------------ | :------------------------------------------------------------------- |
+| Triggering event          | Click the wallet management button                                   |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Wallet management list and presentation of wallet operations         |
+| The operator              | All users                                                            |
 
 > Interface elements -- input and button
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>钱包管理</th>
+        <th>DailyCash</th>
         <th style="text-align:left;">
-             用户点击钱包管理，可对用户个人所属钱包进行导入/导出/删除当操作，详情可见【钱包功能-钱包管理】
+             The user can import/export/delete the wallet owned by the user by clicking wallet management. Details can be seen in [wallet function - wallet management].
         </th>
     </tr>
 </table>
 
-## 帮助中心
+## Help Center
 
-| precondition     | 用户登录账户               |
-| :--------------- | :------------------------- |
-| Triggering event | 点击帮助中心按钮           |
-| The success scenario         | Display corresponding pages             |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure |
-| Functional specifications         | 为用户提供操作问题解答     |
-| The operator           | All users                  |
+| precondition              | User login account                                                   |
+| :------------------------ | :------------------------------------------------------------------- |
+| Triggering event          | Click the help center button                                         |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Provide users with operational questions                             |
+| The operator              | All users                                                            |
 
 > Interface elements -- input and button
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>搜索帮助</th>
+        <th>Search Help</th>
         <th style="text-align:left;">
-            用户可通过关键字搜素或问题搜索查找改操作的解决方法
+           Users can find the solution of the modification by keyword search or problem search 
         </th>
     </tr>
      <tr>
-        <th>不同类型问题解答</th>
+        <th>Different types of questions</th>
         <th style="text-align:left;">
-            用户根据不同问题类型的查找相关的解决方案,问题类型主要包括
+            Users look for related solutions according to different problem types, which mainly include
         </th>
     </tr>
      <tr>
-        <th>联系我们</th>
+        <th>Contact us</th>
         <th style="text-align:left;">
-            用户遇到问题帮助中心无法解决可联系客服
+            The customer encountered a problem that the help center could not solve, but could contact the customer service
         </th>
     </tr>
 </table>
 
-## 实名认证
+## Real-name authentication
 
-| precondition     | 用户登录                   |
-| :--------------- | :------------------------- |
-| Triggering event | 点击实名认证进入           |
-| The success scenario         | Display corresponding pages             |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure |
-| Functional specifications         | 用户进行实名认证           |
-| The operator           | All users                  |
+| precondition              | The user login                                                       |
+| :------------------------ | :------------------------------------------------------------------- |
+| Triggering event          | Click real name authentication to enter                              |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | User authentication                                                  |
+| The operator              | All users                                                            |
 
-UI示意图：实名认证界面
+UI schematic: Real name authentication interface
 
 ![](./assets/home/home4.png)
 
@@ -159,15 +159,15 @@ UI示意图：实名认证界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>身份认证</th>
+        <th>The identity authentication</th>
         <th>
              <ul style="text-align:left;">
-                <li>新用户未进行身份验证时，可点击身份认证，上传图片数据， 点击提交 ，第三方认证比对成功后，实名信息中的姓名与身份证号系统自动填充；比对失败用户须重新上传图片数据</li>
-                <li>完善实名认证信息，可获得MIS币奖励</li>
+                <li>When new users are not authenticated, they can click identity authentication, upload image data and click submit. After third-party authentication is successful, the name and id number system in the real name information will be filled automatically. Users who fail to match must reupload the image data</li>
+                <li>Perfect the real name authentication information, may obtain the MIS currency reward</li>
             </ul>
         </th>
     </tr>
@@ -175,79 +175,79 @@ UI示意图：实名认证界面
         <th></th>
         <th>
              <ul style="text-align:left;">
-                <li>身份认证状态：未验证、失败、验证通过</li>
-                <li>未进行图片上传操作，姓名与身份证号为未知状态</li>
-                <li>用户验证通过，上传身份信息页不能点击进入</li>
-                <li>用户需创建钱包才能进行实名认证操作</li>
+                <li>Authentication status: unverified, failed, passed</li>
+                <li>There is no picture upload operation. Name and id number are unknown</li>
+                <li>User authentication passed, upload the identity information page can not click enter</li>
+                <li>Users need to create a wallet to authenticate with their real name</li>
             </ul>
         </th>
     </tr>
 </table>
 
-## 多语言
+## Multiple Language
 
-| 概述             | 用户的个人设置                  |
-| :--------------- | :------------------------------ |
-| precondition     | 无                              |
-| Triggering event | 点击个人中心进入                |
-| The success scenario         | Display corresponding pages                  |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure      |
-| Functional specifications         | 用户可通过设置开通过体验app功能 |
-| The operator           | All users                       |
-
-> Interface elements -- input and button
-
-<table>
-    <tr>
-        <th>名称</th>
-        <th>规则</th>
-    </tr>
-    <tr>
-        <th>语言切换</th>
-        <th style="text-align:left;">
-            用于可对app语言进行中/英文切换
-        </th>
-    </tr>
-</table>
-
-## 货币单位
-
-| 概述             | 用户的个人设置                  |
-| :--------------- | :------------------------------ |
-| precondition     | 无                              |
-| Triggering event | 点击个人中心进入                |
-| The success scenario         | Display corresponding pages                  |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure      |
-| Functional specifications         | 用户可通过设置开通过体验app功能 |
-| The operator           | All users                       |
+| Overview                  | User's personal Settings                                             |
+| :------------------------ | :------------------------------------------------------------------- |
+| precondition              | Without                                                              |
+| Triggering event          | Click personal center to enter                                       |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Users can access app functions through Settings                      |
+| The operator              | All users                                                            |
 
 > Interface elements -- input and button
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>货币单位选择</th>
+        <th>Language switching</th>
         <th style="text-align:left;">
-            可选择货币单位（CNY/USD）
+            Used for Chinese/English switching of app language
         </th>
     </tr>
 </table>
 
-## 账户设置
+## Monetary Unit
 
-| 概述             | 用户的个人设置                  |
-| :--------------- | :------------------------------ |
-| precondition     | 用户登录                        |
-| Triggering event | 点击设置进入                    |
-| The success scenario         | Display corresponding pages                  |
-| Error scenarios         | The operation fails, and the system gives the reason for the failure      |
-| Functional specifications         | 用户可通过设置开通过体验app功能 |
-| The operator           | All users                       |
+| Overview                  | User's personal Settings                                             |
+| :------------------------ | :------------------------------------------------------------------- |
+| precondition              | Without                                                              |
+| Triggering event          | Click personal center to enter                                       |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Users can access app functions through Settings                      |
+| The operator              | All users                                                            |
 
-UI示意图：设置界面
+> Interface elements -- input and button
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Rules</th>
+    </tr>
+    <tr>
+        <th>Currency unit selection</th>
+        <th style="text-align:left;">
+           Optional currency unit (CNY/USD)
+        </th>
+    </tr>
+</table>
+
+## Account Settings
+
+| Overview                  | User's personal Settings                                             |
+| :------------------------ | :------------------------------------------------------------------- |
+| precondition              | The user login                                                       |
+| Triggering event          | Click on Settings to enter                                           |
+| The success scenario      | Display corresponding pages                                          |
+| Error scenarios           | The operation fails, and the system gives the reason for the failure |
+| Functional specifications | Users can access app functions through Settings                      |
+| The operator              | All users                                                            |
+
+UI schematic: Sets the interface
 
 > Interface elements -- input and button
 
@@ -257,60 +257,60 @@ UI示意图：设置界面
 
 <table>
     <tr>
-        <th>名称</th>
-        <th>规则</th>
+        <th>Name</th>
+        <th>Rules</th>
     </tr>
     <tr>
-        <th>节点设置</th>
+        <th>Node set</th>
         <th style="text-align:left;">
-            添加不同币种的自定义节点地址
+            Add custom node addresses for different currencies
         </th>
     </tr>
      <tr>
-        <th>涨红跌绿</th>
+        <th>Red down green</th>
         <th style="text-align:left;">
-            用户可根据个人使用模式切换配置，系统默认显示为跌红涨绿模式
+            Users can switch the configuration according to their personal usage mode, and the system default is red up green mode
         </th>
     </tr>
      <tr>
-        <th>隐藏模式</th>
+        <th>Hidden mode</th>
         <th>
              <ul style="text-align:left;">
-                <li>隐藏开关量，隐藏模式下，用户点击钱包菜单的资产、金额进行隐藏操作</li>
-                <li>涨跌显示为灰色表示为涨跌平衡，无变化</li>
+                <li>In the hidden mode, the user clicks on the asset and amount of the wallet menu for the hidden operation</li>
+                <li>Rise and fall show for gray to show for rise and fall balance, without change</li>
             </ul>
         </th>
     </tr>
     <tr>
-        <th>手机绑定</th>
+        <th>Mobile phone binding</th>
         <th>
              <ul style="text-align:left;">
-                <li>绑定用户手机号，用户可使用手机号作为帐号进行登录操作</li>
-                <li>用户可使用绑定手机找回账户密码</li>
-                <li>一个手机号只可绑定一个钱包用户</li>
+                <li>Binding user phone number, users can use mobile phone number as account for the login operation</li>
+                <li>The user can use the binding phone to recover the account password</li>
+                <li>A phone number can only be tied to a wallet user</li>
             </ul>
         </th>
     </tr>
      <tr>
-        <th>邮箱绑定</th>
+        <th>Email address</th>
         <th>
              <ul style="text-align:left;">
-                <li>绑定用户手机号，用户可使用邮箱作为帐号进行登录操作励</li>
-                <li>用户可使用绑定邮箱找回账户密码</li>
-                <li>一个手机号只可绑定一个钱包用户</li>
+                <li>Bind user mobile phone number, user can use email account to log in operation</li>
+                <li>User can use bind mailbox to recover account password</li>
+                <li>A phone number can only be tied to a wallet user</li>
             </ul>
         </th>
     </tr>
      <tr>
-        <th>关于我们</th>
+        <th>About us</th>
         <th style="text-align:left;">
-            查看钱包相关的版本信息
+            View the wallet-related version information
         </th>
     </tr>
      <tr>
-        <th>退出登录</th>
+        <th>Logout</th>
         <th style="text-align:left;">
-            用户点击退出登录，重新打开APP需使用账户名+密码进行登录操作；用户直接关闭app而未退出，则可直接进入APP无需登录
+            When the user clicks out to log in and re-opens the APP, the user needs to use the account name and password to log in. Users can directly enter the app without logging in if they directly close the app without quitting
         </th>
     </tr>
 </table>

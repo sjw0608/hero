@@ -107,7 +107,7 @@ UI schematic: Wallet menu
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ UI schematic: Create a wallet and backup mnemonic interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -238,7 +238,7 @@ UI schematic: Wallet details
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -353,7 +353,7 @@ UI diagram: Transfer interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -424,7 +424,7 @@ UI diagram: Collection interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -465,7 +465,7 @@ UI diagram: Collection interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -519,7 +519,7 @@ UI schematic: Sign up for an EOS account
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -572,7 +572,7 @@ UI schematic: Import wallet (BTC/ETH/EOS) interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
@@ -645,7 +645,7 @@ UI schematic: Export interface
 
 <table>
     <tr>
-        <th>The name of the</th>
+        <th>Name</th>
         <th>Rules</th>
     </tr>
     <tr>
