@@ -39,6 +39,7 @@ UI diagram: Login registration interface
             <ul style="text-align:left;">
                 <li>Click "new user registration" button to enter the account registration page and enter the login name and password of the wallet app. Click "finish"</li>
                 <li>After registration, the new user can enter the front page of the wallet to create/import the wallet, or click "my" to enter the personal center to view the account information. If the user does not create the wallet, he/she should return to the operation of creating/importing the wallet, and click "wallet" in the navigation menu</li>
+                <li>Enter the registration account rule: a-z or 1-5 composed of 6 - to 12-bit string</li>
             </ul>
         </th>
     </tr>

@@ -172,6 +172,15 @@ UI示意图：实名认证界面
         </th>
     </tr>
     <tr>
+        <th>个人标签</th>
+        <th>
+             <ul style="text-align:left;">
+                <li>用户个人数据分析图</li>
+                <li>个人标签的数据分布展示需绑定手机号成功</li>
+            </ul>
+        </th>
+    </tr>
+    <tr>
         <th></th>
         <th>
              <ul style="text-align:left;">
@@ -276,8 +285,7 @@ UI示意图：设置界面
         <th>隐藏模式</th>
         <th>
              <ul style="text-align:left;">
-                <li>隐藏开关量，隐藏模式下，用户点击钱包菜单的资产、金额进行隐藏操作</li>
-                <li>涨跌显示为灰色表示为涨跌平衡，无变化</li>
+                隐藏开关量，隐藏模式下，用户点击钱包菜单的资产、金额进行隐藏操作
             </ul>
         </th>
     </tr>

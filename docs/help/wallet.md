@@ -28,28 +28,28 @@
             <td>Blockchain browser</td>
         </tr>
         <tr>
-            <th rowspan="5">The market</th>
+            <th rowspan="4">The market</th>
             <th>Self-selected transaction pair</th>
             <td>Data display of self-selected trading pair (data source: coin exchange)</td>
         </tr>
         <tr>
-            <th>Transaction pair list</th>
-            <td>All transactions based on the exchange will be displayed according to different datum values and the order of different conditions</td>
+            <th>Market value</th>
+            <td>Different digital currencies are displayed by market value</td>
         </tr>
         <tr>
             <th>Search</th>
             <td>Search all currencies of the currency exchange for viewing</td>
         </tr>
-         <tr>
-            <th>Comprehensive</th>
-            <td>Conduct data analysis of different dimensions based on all currencies of the exchange for users to view and compare</td>
-        </tr>
         <tr>
             <th>Transaction details</th>
-            <td>Based on the basic data, currency introduction, data analysis, purchase order and K chart of different dimensions of the main currency</td>
+            <td>
+                <li>All transactions on HuoBi/FCoin/OKex exchange are displayed according to different benchmark values and sorted by different conditions (latest price/up/down today).</li>
+                <li>Obtain the basic data of currency (rise and fall, high/low price, market value, ranking, usd/BTC /eth price), currency introduction, data analysis, buying and selling orders, trading volume and K chart display of different dimensions according to the transaction pair</li>
+                <li>Share details about the transaction</li>
+            </td>
         </tr>
         <tr>
-            <th rowspan="9">Personal center</th>
+            <th rowspan="8">Personal center</th>
             <th>User login registration</th>
             <td>User registration and login</td>
         </tr>
@@ -58,12 +58,11 @@
             <td>Current account display, mobile phone number binding, email binding, privacy setting, red and green setting, node setting, and exit account</td>
         </tr>
         <tr>
-            <th>Personal data label</th>
-            <td>Backup data-key, WeChat authorization, and upload user id information</td>
-        </tr>
-        <tr>
             <th>Real-name authentication</th>
-            <td>Upload status for authentication (reward mis)</td>
+            <td>
+                <li>Upload status for authentication (reward mis)</li>
+                <li>The user binds the mobile phone number and can view the personal tag (data distribution of the user's personal wallet behavior).</li>
+            </td>
         </tr>
         <tr>
             <th>The wallet management</th>
@@ -131,7 +130,8 @@ UI schematic: Wallet menu
     <tr>
         <th>Import new wallet</th>
         <th style="text-align:left;">
-            The user can import other wallets of the user in different ways to facilitate the unified management of the user. The import operation details can be seen as: MIS wallet (mnemonic word, private key), BTC (mnemonic word, private key), ETH (Keystore, mnemonic word, private key), EOS wallet (private key, ETH private key)
+            <li>The user can import other wallets of the user in different ways to facilitate the unified management of the user. The import operation details can be seen as: MIS wallet (mnemonic word, private key), BTC (mnemonic word, private key), ETH (Keystore, mnemonic word, private key), EOS wallet (private key, ETH private key)</li>
+            <li>Limit the number of new wallets that users can import (no more than 5 for different types of wallets)</li>
         </th>
     </tr>
     <tr>
@@ -268,13 +268,13 @@ UI schematic: Wallet details
      <tr>
         <th>Market trends</th>
         <th style="text-align:left;">
-          Enter the market details page of the selected currency to facilitate the user to view all trading pairs trend and rise and fall range based on the selected currency. For example, the selected currency is ETH(2), and users can check the trading pair trend and rise and fall range based on ETH
+          Enter the market details page of the selected currency to facilitate the user to view all trading pairs trend and rise and fall range based on the selected currency.
         </th>
     </tr>
     <tr>
         <th>Export the wallet</th>
         <th style="text-align:left;">
-            Enter the wallet export page. Different types of wallet can be exported in different ways, such as MIS wallet (mnemonic/private key), BTC wallet (mnemonic/private key), ETH wallet (keystore/ mnemonic/private key), EOS wallet (private key), etc
+            Enter the wallet export page. Different types of wallet can be exported in different ways, such as MIS wallet (mnemonic/private key), BTC wallet (mnemonic), ETH wallet (keystore/ mnemonic/private key), EOS wallet (private key), etc
         </th>
     </tr>
      <tr>
@@ -433,12 +433,6 @@ UI diagram: Collection interface
             Copy the wallet address (the EOS collection address is the registered account name)
         </th>
     </tr>
-    <tr>
-        <th>Replace the wallet</th>
-        <th style="text-align:left;">
-            When the user has multiple wallets of the same type, the user can change the receiving wallet
-        </th>
-    </tr>
      <tr>
         <th>Share</th>
         <th style="text-align:left;">
@@ -590,7 +584,6 @@ UI schematic: Import wallet (BTC/ETH/EOS) interface
                 <li>Select the private key import mode, and the user fills in the clear private key through manual input or scan identification input mode, paying attention to the case of the input character</li>
                 <li>The user can reset the wallet password and enter it again. The wallet password is the payment password for the wallet</li>
                 <li>The user enters the password prompt message so that the user can forget the wallet password to prompt</li>
-                <li>Click "know the plaintext private key"/" know the mnemonic word "and the user enters to read the relevant overview in detail</li>
             </ul>
         </th>
     </tr>
@@ -610,16 +603,6 @@ UI schematic: Import wallet (BTC/ETH/EOS) interface
             <ul style="text-align:left;">
                 <li>The wallet is imported by mnemonic, private key, ETH private key</li>
                 <li>The operation details of mnemonic words and private keys can be seen in BITCOIN wallet.</li>
-                <li>Choose the ETH private key way of import, the user should be the etheric lane private key by manual input or scanning entities private key content generated qr code input text box, and fill in the confirm password, click "import", use the ETH private key back into the user's account of the ETH must satisfy the operating conditions, the specific conditions of the user to view "EOS account back"</li>
-            </ul>
-        </th>
-    </tr>
-     <tr>
-        <th>MIS wallet</th>
-        <th >
-            <ul style="text-align:left;">
-                <li>The wallet is imported by mnemonic, private key, ETH private key</li>
-                <li>Details of the import operation can be seen [EOS wallet]</li>
             </ul>
         </th>
     </tr>

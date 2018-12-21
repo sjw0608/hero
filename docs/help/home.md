@@ -172,6 +172,15 @@ UI schematic: Real name authentication interface
         </th>
     </tr>
     <tr>
+        <th>Individual labels</th>
+        <th>
+             <ul style="text-align:left;">
+                <li>User personal data analysis chart</li>
+                <li>Personal label data distribution display needs to bind the phone number successfully</li>
+            </ul>
+        </th>
+    </tr>
+    <tr>
         <th></th>
         <th>
              <ul style="text-align:left;">
@@ -276,8 +285,7 @@ UI schematic: Sets the interface
         <th>Hidden mode</th>
         <th>
              <ul style="text-align:left;">
-                <li>In the hidden mode, the user clicks on the asset and amount of the wallet menu for the hidden operation</li>
-                <li>Rise and fall show for gray to show for rise and fall balance, without change</li>
+               In the hidden mode, the user clicks on the asset and amount of the wallet menu for the hidden operation
             </ul>
         </th>
     </tr>
