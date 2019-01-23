@@ -44,7 +44,7 @@ module.exports = {
           }
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('guide', 'Guide'),
+          '/guide/': genSidebarConfig('guide', 'Guide', 'Ipfs'),
           '/help/': genSidebarConfig('help', 'Help')
         }
       },
@@ -84,7 +84,7 @@ function genSidebarConfig(module, title) {
       {
         title,
         collapsable: false,
-        children: ['', 'api']
+        children: ['', 'api', 'IPFS']
       }
     ]
   }
